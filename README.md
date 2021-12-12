@@ -4,11 +4,14 @@ Podemos utilizar uma pilha para verificar se a parentização está balanceada. 
 seguinte ideia:
 
 ● Sempre que abrimos um símbolo ‘(‘, ‘[‘ ou ‘{‘, colocamos ele em uma pilha.
+
 ● Sempre que fechamos um símbolo ‘)’, ‘]’ ou ‘}’, retiramos o elemento do topo da pilha
 e verificamos se é o símbolo de abertura correspondente. Se não for, significa que
 detectamos um desbalanceamento.
+
 ● Ao final do código/expressão verificamos se a pilha está vazia. Se não estiver
 significa que abrimos um símbolo que nunca fechamos.
+
 ● Todos os outros tipos de caracteres são ignorados.
 
 Nesse trabalho você deverá implementar um verificador de parentização simples. Que
