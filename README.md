@@ -1,4 +1,4 @@
-#checker-codes-hokama
+# checker-codes-hokama
 
 We can use a stack to check if the parenting is balanced. Using the following idea:
 
