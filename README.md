@@ -1,31 +1,17 @@
-# verificador-codigos-hokama
+#checker-codes-hokama
 
-Podemos utilizar uma pilha para verificar se a parentização está balanceada. Utilizando a
-seguinte ideia:
+We can use a stack to check if the parenting is balanced. Using the following idea:
 
-● Sempre que abrimos um símbolo ‘(‘, ‘[‘ ou ‘{‘, colocamos ele em uma pilha.
+● Whenever we open a '(', '[' or '{' symbol, we put it on a stack.
 
-● Sempre que fechamos um símbolo ‘)’, ‘]’ ou ‘}’, retiramos o elemento do topo da pilha
-e verificamos se é o símbolo de abertura correspondente. Se não for, significa que
-detectamos um desbalanceamento.
+● Whenever we close a ')', ']' or '}' symbol, we remove the element from the top of the stack and check if it is the corresponding opening symbol. If not, it means that we have detected an imbalance.
 
-● Ao final do código/expressão verificamos se a pilha está vazia. Se não estiver
-significa que abrimos um símbolo que nunca fechamos.
+● At the end of the code/expression we check if the stack is empty. If it is not, it means that we have opened a symbol that we have never closed.
 
-● Todos os outros tipos de caracteres são ignorados.
+● All other character types are ignored.
 
-Nesse trabalho você deverá implementar um verificador de parentização simples. Que
-simplesmente lê o texto da entrada padrão do sistema e verifica se nesse texto, parentes,
-colchetes e chaves são abertos e fechados de maneira balanceada. Um código será
-fornecido e você pode usá-lo à vontade.
+In this work you will implement a simple parenting checker. Which simply reads the text from the system's standard input and checks that in that text, parentheses, square brackets and braces are opened and closed in a balanced way. A code will be provided and you can use it at will.
 
-O verificador não vai verificar todos os casos. Por exemplo, se um símbolo aparece dentro
-de uma string, ele vai ser considerado um símbolo e acusará um erro.
+The verifier will not check all cases. For example, if a symbol appears within a string, it will be considered a symbol and will throw an error.
 
-Obviamente o nosso verificador também não garante que um código/expressão está
-corretamente escrito, mas pode sim ser usado como uma das etapas da verificação
-completa.
-O seu programa deverá indicar qual o símbolo que originou o problema. Se o símbolo é de
-fechamento, ele deve dizer a linha que houve esse fechamento. E se for um símbolo de
-abertura que não foi fechado, o programa deve indicar o símbolo, mas não precisa indicar
-em qual linha ele foi aberto. 
+Obviously our verifier also does not guarantee that a code/expression is correctly written, but it can be used as one of the steps of the complete verification. Your program should indicate which symbol caused the problem. If the symbol is a closing one, it should tell the line that there was this closing. And if it's an opening symbol that hasn't been closed, the program should indicate the symbol, but it doesn't have to indicate which line it was opened on.
